@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[世界，你好！]]></title>
+    <url>%2F2019%2F03%2F06%2Fpost%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%EF%BC%81%2F</url>
+    <content type="text"><![CDATA[注意层跟空格123因为一个层结构导致一直You should configure deployment settings in _config.yml first!无语无语！！ 域名绑定1$ 后台绑定域名后每次hexo d 都会解绑域名，直接在source文件里面添加CNAME文件后生成上传。]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+</search>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>myblog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="midi-yip.github.io/"/>
+  <updated>2019-03-08T17:08:39.159Z</updated>
+  <id>midi-yip.github.io/</id>
+  
+  <author>
+    <name>midi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>世界，你好！</title>
+    <link href="midi-yip.github.io/2019/03/06/post%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C%EF%BC%81/"/>
+    <id>midi-yip.github.io/2019/03/06/post你好，世界！/</id>
+    <published>2019-03-05T22:23:38.000Z</published>
+    <updated>2019-03-08T17:08:39.159Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="注意层跟空格"><a href="#注意层跟空格" class="headerlink" title="注意层跟空格"></a>注意层跟空格</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">因为一个层结构导致一直</span><br><span class="line">You should configure deployment settings <span class="keyword">in</span> _config.yml first!</span><br><span class="line">无语无语！！</span><br></pre></td></tr></table></figure><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 后台绑定域名后每次hexo d 都会解绑域名，直接在<span class="built_in">source</span>文件里面添加CNAME文件后生成上传。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;注意层跟空格&quot;&gt;&lt;a href=&quot;#注意层跟空格&quot; class=&quot;headerlink&quot; title=&quot;注意层跟空格&quot;&gt;&lt;/a&gt;注意层跟空格&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="midi-yip.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="midi-yip.github.io/tags/github/"/>
+    
+  </entry>
+  
+</feed>
