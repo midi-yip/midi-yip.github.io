@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head><meta name="generator" content="Hexo 3.8.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>54屋</title>
+	<link rel="shortcut icon" href="/images/favicon.ico"> <link rel="stylesheet" href="/css/style.css"> <script src="/js/jquery.js"></script> <script src="/js/search.js"></script>
+</head>
+
+
+	<body>
+		<header class="header">
+	<div class="title">
+		<a href="/" class="logo">
+			54屋
+		</a>
+		<span>by 米弟</span>
+	</div>
+	<nav class="navbar">
+		<ul class="menu">
+			
+				<li class="menu-item">
+					<a href="/" class="menu-item-link">
+						主页
+					</a>
+				</li>
+				
+				<li class="menu-item">
+					<a href="/about" class="menu-item-link">
+						关于我
+					</a>
+				</li>
+				
+					
+		</ul>
+	</nav>
+</header> <article class="article-container">
+	<div class="post-toc">
+		<h3>本文目录</h3>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#菜鸟的记录"><span class="toc-text">菜鸟的记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新建远程分支"><span class="toc-text">新建远程分支</span></a></li></ol></li></ol>
+	</div>
+	<div class="post-container">
+		<div class="post-title">
+			<h2 class="title">
+				git创建分支并推送到远程分支
+			</h2>
+		</div>
+		<div class="post-meta">
+			<span class="post-time">
+				2019-03-12
+			</span>
+		</div>
+		<div class="post-content">
+			<h2 id="菜鸟的记录"><a href="#菜鸟的记录" class="headerlink" title="菜鸟的记录"></a>菜鸟的记录</h2><h3 id="新建远程分支"><a href="#新建远程分支" class="headerlink" title="新建远程分支"></a>新建远程分支</h3><p>新建一个本地分支：</p>
+<p>$ git checkout -b dbg_lichen_star<br>查看一下现在的分支状态:</p>
+<p>$ git branch</p>
+<ul>
+<li>dbg_lichen_star<br>master<br>release<br>星号(*)表示当前所在分支。现在的状态是成功创建的新的分支并且已经切换到新分支上。</li>
+</ul>
+<p>把新建的本地分支push到远程服务器，远程分支与本地分支同名（当然可以随意起名）：</p>
+<p>$ git push origin dbg_lichen_star:dbg_lichen_star<br>使用git branch -a查看所有分支，会看到remotes/origin/dbg_lichen_star这个远程分支，说明新建远程分支成功。</p>
+<p>删除远程分支<br>我比较喜欢的简单方式，推送一个空分支到远程分支，其实就相当于删除远程分支：</p>
+<p>$ git push origin :dbg_lichen_star<br>也可以使用：</p>
+<p>$ git push origin –delete dbg_lichen_star<br>这两种方式都可以删除指定的远程分支</p>
+
+		</div>
+	</div>
+</article>
+<!-- top -->
+<a id="goTop" class="go-top" type="button">^</a>
+<script>
+	goTop.addEventListener('click', function (e) {
+		document.querySelector('.post-container').scrollTo(0, 0);
+	});
+</script> <footer>
+	
+	<p><a href="http://beian.miit.gov.cn/"></a></p>
+	
+</footer>
+
+	</body>
+</html>
