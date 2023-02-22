@@ -360,13 +360,13 @@
         </a>
         
         
-        <a class="全部文章 " href="/2019/03/12/new-branch/" data-tag="分支,github" data-author>
+        <a class="全部文章 " href="/2019/03/12/new-branch/" data-tag="github,分支" data-author>
             <span class="post-title" title="git创建分支并推送到远程分支">git创建分支并推送到远程分支</span>
             <span class="post-date" title="2019-03-12 22:23:38">2019/03/12</span>
         </a>
         
         
-        <a class="全部文章 " href="/2019/03/05/hello-world/" data-tag="github,hexo" data-author>
+        <a class="全部文章 " href="/2019/03/05/hello-world/" data-tag="hexo,github" data-author>
             <span class="post-title" title="世界，你好！">世界，你好！</span>
             <span class="post-date" title="2019-03-05 22:23:38">2019/03/05</span>
         </a>
@@ -416,12 +416,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title="最后更新: 2023-02-22 17:14:22">2023-02-22 17:08</time>
+            发布时间 : <time class="date" title="最后更新: 2023-02-22 17:28:04">2023-02-22 17:08</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:284</span>
+        <span>字数:288</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -471,10 +471,9 @@
 </code></pre><p>前面忘了截图了，这个是我开启后的状态。<br>![前面忘了截图了，这个是我开启后的状态]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056729294.png"></p>
 <p>首先、我们需要设备ID、供应商ID，这个可以USB控制器这边来直接获取。<br>![设备ID、供应商ID]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056729314.png"></p>
 <p>其次、通过管理界面来启用SHELL。<br>![启用SSH]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056708845.png"></p>
-<p>第三、通过命令找到对应路径来添加直通代码，或是直接WINSCP直接找到相应路径编辑。<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056625439"></a><br><strong><code>*vi /etc/vmware/passthru.map*</code></strong><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056625439"></a></p>
-<p>第四、在编辑框里添加以下代码</p>
-<p><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056618440"></a><br> ==# Pentium Silver Processor USB 3.0 xHCI Controller #00BCD4==<br>==XXXX  XXXX  d3d0     default #00BCD4==  【前面两个值是第一步得到的，后面两个值是默认的】<br>==其中8086是供应商ID 8C31是设备ID d3d0和default固定值 #00BCD4==<a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056618440"></a></p>
-<p>最后保存退出并重启EXSI。<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056608903"></a><br>esc<br>:wq<a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056608903"></a></p>
+<p>第三、通过命令找到对应路径来添加直通代码，或是直接WINSCP直接找到相应路径编辑。<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056625439"></a><br>【vi /etc/vmware/passthru.map】<a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056625439"></a></p>
+<p>第四、在编辑框里添加以下代码<br> 通过 【i】命令切入<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056618440"></a><br> 【# Pentium Silver Processor USB 3.0 xHCI Controller】<br> 【XXXX  XXXX  d3d0     default  前面两个值是第一步得到的，后面两个值是默认的】<br> 【其中8086是供应商ID 8C31是设备ID d3d0和default固定值 <a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056618440"></a>】</p>
+<p>最后保存退出并重启EXSI。<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056608903"></a><br>【esc】<br>【:wq】<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_end" name="xsj_1677056608903"></a></p>
 <p>重启后别忘了去做直通切换。</p>
 <p>如果是有多个硬盘，多个SATA控制器，也可以试着用这方法来添加直通。</p>
 
