@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>you-get安装及使用步骤</title>
+      <link href="/2023/02/24/you-get20230224/"/>
+      <url>/2023/02/24/you-get20230224/</url>
+      
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code>you-get一个基于Python开发的一个开源工具，通过几条命令就可以从WEB网站下载媒体内容。</code></pre><p>一、you-get 安装<br>需要以下依赖：<br>    Python 3.2及以上版本<br>    FFmpeg 1.0及以上版本<br>    RTMPDump（可选，非必须安装）</p><p>  Python安装：<br>  去官网下载Python安装包，要求Python版本需要在3.2及以上，下图直接安装最新版。<br>  官网下载地址：<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/</a><br>  一般一默认操作就可以。<br>  完成后我们打开 CMD命令窗口，通过Python -v 命令来查看是否安装成功。<br>二、PyPI（Python Package Index ），其实表示的是 Python 的 Packag 索引，这个也是 Python 的官方索引。 你需要的包（Package）基本上都可以从这里面找到。<br>  1.you-get的官方版本是在PyPI上发布的，可以通过Python自带的pip包管理器轻松地从PyPI镜像安装。</p><pre><code>注意，必须使用Python 3版本的pip，前缀需要写成pip3:通过pip3 install you-get命令安装you-get</code></pre><p>  2.安装you-get的过程中你可能会遇到如下图所示的问题，意思是Python的pip管理包版本需要升级到22.0.3版本。<br>  需要的话按命令提示进行升级就可以了</p><pre><code>在cmd命令行输入：python -m pip install --upgrade pip    </code></pre><p>  3.pip更新完之后，重新输入：pip3 install you-get 命令，安装you-get<br>  4.通过Python的pip管理包工具直接下载安装FFmpeg，输入pip3 install ffmpeg 命令进行安装。</p><pre><code>FFmpeg：FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多code都是从头开发的。</code></pre><p>三、you-get 常用命令<br>————————————————<br>// 查看you-get版本<br>you-get –version<br>缩写：you-get -V</p><p>// 查看帮助<br>you-get –help<br>缩写：you-get -h</p><p>// 查看Web网站媒体资源信息<br>you-get –info [url]<br>缩写：you-get -i [url]</p><p>// 下载Web网站媒体资源，默认以最高清晰度下载<br>you-get [url]</p><p>// 下载Web网站媒体资源，指定清晰度下载<br>you-get –format=[资源清晰度] [url]<br>缩写：you-get -F=[资源清晰度] [url]<br>————————————————</p><p>四、配置cookies<br>有些网站需要登录才能下载完整版视频，而且有些还需要会员账号才能下载<br>根据官方给出的文档，目前只支持火狐浏览器和Netscape浏览器的cookies，这里以火狐浏览器为例，进行配置cookies。</p><p>1.下载安装火狐浏览器<br>官网：<a href="http://www.firefox.com.cn" target="_blank" rel="noopener">http://www.firefox.com.cn</a></p><p>2.登录视频网站<br>用账号登录视频网站，如果要下载会员视频，前提你得有会员账号，网站需要先登录账号，获取网站登录的cookies，即可在命令行下载会员视频了。</p><p>3.找到cookies文件位置<br>这里以火狐浏览器为例，火狐浏览器的cookies文件cookies.sqlite 位置默认在C:\Users\pc\AppData\Roaming\Mozilla\Firefox\Profiles下，在Profiles里面搜索cookies.sqlite就可以找到，其中pc是自己的用户名。</p><p>4.下载视频<br>通过输入命令 you-get –cookies=[COOKIES_FILE所在位置以及文件名] [url] 即可下载完整版或者会员视频<br>————————————————<br>版权声明：本文为CSDN博主「lywStuding」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/lywstuding/article/details/123055697" target="_blank" rel="noopener">https://blog.csdn.net/lywstuding/article/details/123055697</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享,you-get,54屋 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于ESXI7.0直通USB设置</title>
       <link href="/2023/02/22/exsi-usb20230222/"/>
       <url>/2023/02/22/exsi-usb20230222/</url>
@@ -21,6 +46,31 @@
         <tags>
             
             <tag> 分享,EXSI,USB直通,54屋 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JD京豆自助流程</title>
+      <link href="/2023/02/17/new20230216/"/>
+      <url>/2023/02/17/new20230216/</url>
+      
+        <content type="html"><![CDATA[<p>看到网上很多都自己搭建了青龙面板，也跟风弄了一个。<a href="http://mirouter.iok.la" target="_blank" rel="noopener"> http://mirouter.iok.la/ </a>操作也比较简单，网上教程也都齐全，只要把你获得的COOKIE按要求填入提交就算完成。<br>1、获取京东COOKIE<br>     使用浏览器访问m.jd.com,通过开发者模式（F12)的network标签来获取你的COOKIE。<br>2、提交COOKIE<br>通过面板的便捷方式直接把你的获得的值填入并提交，但因COOKIE的时效性，我们需要给它设置下面的自动更新转换功能了（wsck)。<br>3、提交WSCK<br>wsck提取教程可直接百度,一般用的都是这些APP（安卓：小黄鸟工具、VNET软件，IOS：stream），提取完成后依然到面板进行提交，就不用担心失效而自助停止了。<br><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1676855653956.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JD,京东,京豆,自助签到 </tag>
             
         </tags>
       
@@ -58,31 +108,6 @@
     
     
     <entry>
-      <title>JD京豆自助流程</title>
-      <link href="/2023/02/17/new20230216/"/>
-      <url>/2023/02/17/new20230216/</url>
-      
-        <content type="html"><![CDATA[<p>看到网上很多都自己搭建了青龙面板，也跟风弄了一个。<a href="http://mirouter.iok.la" target="_blank" rel="noopener"> http://mirouter.iok.la/ </a>操作也比较简单，网上教程也都齐全，只要把你获得的COOKIE按要求填入提交就算完成。<br>1、获取京东COOKIE<br>     使用浏览器访问m.jd.com,通过开发者模式（F12)的network标签来获取你的COOKIE。<br>2、提交COOKIE<br>通过面板的便捷方式直接把你的获得的值填入并提交，但因COOKIE的时效性，我们需要给它设置下面的自动更新转换功能了（wsck)。<br>3、提交WSCK<br>wsck提取教程可直接百度,一般用的都是这些APP（安卓：小黄鸟工具、VNET软件，IOS：stream），提取完成后依然到面板进行提交，就不用担心失效而自助停止了。<br><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1676855653956.png"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 分享 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> JD,京东,京豆,自助签到 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>git创建分支并推送到远程分支</title>
       <link href="/2019/03/12/new-branch/"/>
       <url>/2019/03/12/new-branch/</url>
@@ -93,9 +118,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> 分支 </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
@@ -114,9 +139,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
