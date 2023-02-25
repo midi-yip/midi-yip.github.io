@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>群晖利用CHATGPT搭建WECHAT机器人方法</title>
+      <link href="/2023/02/25/chatGPT/"/>
+      <url>/2023/02/25/chatGPT/</url>
+      
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><p>群晖搭建方法<br>在群晖的Docker文件目录里（一般是/docker/XXX/），自己定义，文件夹里新建一个文本文档，输入以下内容，并重命名为config.ts，并且在文件里面修改成你的OpenAPI。</p><h1 id="预防被封号建议用小号进行测试"><a href="#预防被封号建议用小号进行测试" class="headerlink" title="[预防被封号建议用小号进行测试]"></a>[预防被封号建议用小号进行测试]</h1><pre><code>export default {  // 填入你的session token  OPENAI_API_KEY: &apos;&apos;,  // 设置获取消息的重试次数  retryTimes: 3,  // 在群组中设置唤醒微信机器人的关键词  groupKey: &apos;&apos;,  // 在私聊中设置唤醒微信机器人的关键词  privateKey: &apos;&apos;,  // 重置上下文的关键词，如可设置为reset  resetKey: &apos;reset&apos;,  // 开启会后收到ChatGPT的自动回复  autoReply: true,  // 根据正则匹配是否自动通过好友验证  friendShipRule: /chatgpt|chat/,  // 是否在群聊中按照回复的格式进行回复  groupReplyMode: true,  // 是否在私聊中按照回复的格式进行回复  privateReplyMode: false,};</code></pre><p>如果用的不是微信小号，最好也设置一个唤醒词，避免打扰到别人。</p><p>搜索并下载Docker映像suyunkai46/chatgpt-wechat</p><p>新增容器，选择下载的镜像部署，需要把下载的config.ts文件挂载到容器内/code/src/config.ts路径上，其余设置均默认即可。</p><p>进入容器终端机，依次输入三条指令：</p><pre><code>npm install -g pm2pm2 start npm -- run devpm2 logs</code></pre><p>npm install -g pm2只有刚搭建完后需要输入一次，以后再也不用输入了</p><pre><code>每次重新启动容器，都需要控制台手动输入一次pm2 start npm -- run dev，才能启动程序  随时可以输入pm2 logs查看日志记录获取微信二维码</code></pre><p>通过微信扫码即可登陆，然后给登陆的微信号发消息，就可以愉快的调戏ChatGPT了。<br>![扫描二维码]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677318905978.png"></p><pre><code>错位了刷新多几次就好了。</code></pre><h1 id="预防被封号建议用小号进行测试-1"><a href="#预防被封号建议用小号进行测试-1" class="headerlink" title="预防被封号建议用小号进行测试"></a>预防被封号建议用小号进行测试</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享,OPENAI,chatGPT,WECHAT,机器人,54屋 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于OPENAI注册验证问题</title>
       <link href="/2023/02/25/SMS-Activalte20230225/"/>
       <url>/2023/02/25/SMS-Activalte20230225/</url>
@@ -143,9 +168,9 @@
       
         <tags>
             
-            <tag> 分支 </tag>
-            
             <tag> github </tag>
+            
+            <tag> 分支 </tag>
             
         </tags>
       
@@ -164,9 +189,9 @@
       
         <tags>
             
-            <tag> github </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
