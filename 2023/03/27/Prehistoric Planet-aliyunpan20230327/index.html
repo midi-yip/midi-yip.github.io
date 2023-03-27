@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>关于ESXI7.0直通USB设置 | 54屋</title>
-  <meta name="keywords" content=" 54屋 , EXSI , USB直通 ">
-  <meta name="description" content="关于ESXI7.0直通USB设置 | 54屋">
+  <title>史前地球纪录片4K-阿里云盘资源下载-持续在线更新 | 54屋</title>
+  <meta name="keywords" content=" aliyun , 阿里去盘 , 54屋 ">
+  <meta name="description" content="史前地球纪录片4K-阿里云盘资源下载-持续在线更新 | 54屋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Oops～，我崩溃了！找不到你想要的页面 :(">
 <meta name="keywords" content="免费梯子,SSR,自助签到教程,github博客">
@@ -533,9 +533,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-exsi-usb20230222" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Prehistoric Planet-aliyunpan20230327" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">关于ESXI7.0直通USB设置</h1>
+        <h1 class="article-title">史前地球纪录片4K-阿里云盘资源下载-持续在线更新</h1>
     
     <div class="article-meta">
         
@@ -553,23 +553,23 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
+            <a class="color2">aliyun</a>
+            
+            <a class="color5">阿里去盘</a>
+            
             <a class="color4">54屋</a>
-            
-            <a class="color5">EXSI</a>
-            
-            <a class="color1">USB直通</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title="最后更新: 2023-03-16 09:43:14">2023-02-22 17:08</time>
+            发布时间 : <time class="date" title="最后更新: 2023-03-27 17:53:49">2023-03-27 17:47</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:295</span>
+        <span>字数:549</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -599,7 +599,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#欢迎使用-54屋-44444o-博客"><span class="toc-text">欢迎使用 {54屋}(44444o)博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关阅读"><span class="toc-text">相关阅读</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#欢迎使用-54屋-44444o-博客"><span class="toc-text">欢迎使用 {54屋}(44444o)博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#史前地球纪录片-4K"><span class="toc-text">史前地球纪录片-4K</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关阅读"><span class="toc-text">相关阅读</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -615,20 +615,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code>弄了个ALL IN ONE，但NAS识别不到USB，在EXSI查看时发现它的状态是灰色的，我们需要来开启它。
-</code></pre><p>前面忘了截图了，这个是我开启后的状态。<br>![前面忘了截图了，这个是我开启后的状态]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056729294.png"></p>
-<p>首先、我们需要设备ID、供应商ID，这个可以USB控制器这边来直接获取。<br>![设备ID、供应商ID]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056729314.png"></p>
-<p>其次、通过管理界面来启用SHELL。<br>![启用SSH]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677056708845.png"></p>
-<p>第三、通过命令找到对应路径来添加直通代码，或是直接WINSCP直接找到相应路径编辑。<br><a class="xsj_anchor xsj_anchor_range xsj_anchor_range_start" name="xsj_1677056625439"></a><br>     【vi /etc/vmware/passthru.map】</p>
-<p>第四、通过 【i】命令切入在编辑框里添加以下代码</p>
-<pre><code>【# Pentium Silver Processor USB 3.0 xHCI Controller】
-【8086  a10d  d3d0   default】 
-【其中8086是供应商ID a10d是设备ID d3d0和default固定值 】
-</code></pre><p>最后保存退出并重启EXSI。</p>
-<pre><code>【esc】
-【:wq】
-</code></pre><p>重启后别忘了去做直通切换。</p>
-<p>如果是有多个硬盘，多个SATA控制器，也可以试着用这方法来添加直通。</p>
+        <h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code>网上搜集的一些小资源。
+注册网盘保存到自己的账号下，也帮我扩展下空间，以分享更多资源。
+</code></pre><blockquote>
+<p><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png"></p>
+</blockquote>
+<h3 id="史前地球纪录片-4K"><a href="#史前地球纪录片-4K" class="headerlink" title="史前地球纪录片-4K"></a>史前地球纪录片-4K</h3><blockquote>
+<p><a href="https://www.aliyundrive.com/s/GyPPzpmpys8" target="_blank" rel="noopener">https://www.aliyundrive.com/s/GyPPzpmpys8</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p>
+</blockquote>
+<blockquote>
+<p>史前地球是一部关于地球演化和生命进化的纪录片系列。该系列共分为两季，每季四集，由BBC制作，David Attenborough担任旁白。<br>第一季的四集分别为：<br>神奇的第一步：介绍了地球诞生时的情况，从最早的单细胞生物开始讲述了生命的进化史。<br>时钟之树：讲述了各种不同类型的植物和动物在地球上的兴起和演化过程，揭示了生命之间的相互联系和生态平衡。<br>当恐龙统治时：介绍了恐龙时代的情况，包括恐龙的种类和繁衍方式，以及恐龙灭绝的原因。<br>海洋巨兽：讲述了海洋生物的演化历史，包括最早的海藻和水母，到鲸鱼和鲨鱼的出现。<br>第二季的四集分别为：<br>克服极限：介绍了一些极端环境下的生命形式，包括极地、沙漠和高海拔地区的生物。<br>幕后之手：揭示了一些微小生物对地球生态系统的影响，如细菌、真菌和病毒等。<br>第六大灭绝：讲述了地球历史上的第六次大灭绝，以及这次大灭绝对地球生态系统和生命演化的影响。<br>新世界的繁荣：介绍了人类对地球生态系统的影响，以及一些生态保护和环境治理的措施。<br>史前地球的画面精美，内容深入浅出，是一部值得观看的地球科学纪录片。</p>
+</blockquote>
+<p>Regenerate response</p>
+<p>ChatGPT Mar 14 Version. Free Research Preview. Our goal is to make AI systems more natural and safe to interact with. Your feed</p>
 <h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote>
 <p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a></p>
 </blockquote>
