@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>利用群晖搭建CHATGPT对接WECHAT机器人 | 54屋-阿里云盘资源分享</title>
-  <meta name="keywords" content=" OPENAI , chatGPT , 54屋 , WECHAT , 机器人 ">
-  <meta name="description" content="利用群晖搭建CHATGPT对接WECHAT机器人 | 54屋-阿里云盘资源分享">
+  <title>aliyun阿里云盘资源分享-诗词持续在线更新 | 54屋-阿里云盘资源分享</title>
+  <meta name="keywords" content=" 54屋 , aliyun , 阿里云盘 , 电子书 , 诗词 ">
+  <meta name="description" content="aliyun阿里云盘资源分享-诗词持续在线更新 | 54屋-阿里云盘资源分享">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Oops～，我崩溃了！找不到你想要的页面 :(">
 <meta name="keywords" content="免费梯子,SSR,京东自助签到,阿里云盘,github博客">
@@ -615,9 +615,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-chatGPT" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-aliyunpan20231215sg" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">利用群晖搭建CHATGPT对接WECHAT机器人</h1>
+        <h1 class="article-title">aliyun阿里云盘资源分享-诗词持续在线更新</h1>
     
     <div class="article-meta">
         
@@ -635,27 +635,27 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">OPENAI</a>
-            
-            <a class="color3">chatGPT</a>
-            
             <a class="color4">54屋</a>
             
-            <a class="color2">WECHAT</a>
+            <a class="color2">aliyun</a>
             
-            <a class="color4">机器人</a>
+            <a class="color5">阿里云盘</a>
+            
+            <a class="color4">电子书</a>
+            
+            <a class="color3">诗词</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title="最后更新: 2023-03-16 09:43:06">2023-02-25 17:47</time>
+            发布时间 : <time class="date" title="最后更新: 2023-12-15 11:31:49">2023-12-15 11:07</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:516</span>
+        <span>字数:1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -685,7 +685,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#欢迎使用-54屋-44444o-博客"><span class="toc-text">欢迎使用 {54屋}(44444o)博客</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#预防被封号建议用小号进行测试"><span class="toc-text">[预防被封号建议用小号进行测试]</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#预防被封号建议用小号进行测试-1"><span class="toc-text">预防被封号建议用小号进行测试</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关阅读"><span class="toc-text">相关阅读</span></a></li></ol></li>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#欢迎使用-54屋-44444o-博客"><span class="toc-text">欢迎使用 {54屋}(44444o)博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、经典诗词合集"><span class="toc-text">一、经典诗词合集</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关阅读"><span class="toc-text">相关阅读</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -701,46 +701,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><p>群晖搭建方法<br>在群晖的Docker文件目录里（一般是/docker/XXX/），自己定义，文件夹里新建一个文本文档，输入以下内容，并重命名为config.ts，并且在文件里面修改成你的OpenAPI。</p>
-<h1 id="预防被封号建议用小号进行测试"><a href="#预防被封号建议用小号进行测试" class="headerlink" title="[预防被封号建议用小号进行测试]"></a>[预防被封号建议用小号进行测试]</h1><pre><code>export default {
-  // 填入你的session token
-  OPENAI_API_KEY: &apos;&apos;,
-  // 设置获取消息的重试次数
-  retryTimes: 3,
-  // 在群组中设置唤醒微信机器人的关键词
-  groupKey: &apos;&apos;,
-  // 在私聊中设置唤醒微信机器人的关键词
-  privateKey: &apos;&apos;,
-  // 重置上下文的关键词，如可设置为reset
-  resetKey: &apos;reset&apos;,
-  // 开启会后收到ChatGPT的自动回复
-  autoReply: true,
-  // 根据正则匹配是否自动通过好友验证
-  friendShipRule: /chatgpt|chat/,
-  // 是否在群聊中按照回复的格式进行回复
-  groupReplyMode: true,
-  // 是否在私聊中按照回复的格式进行回复
-  privateReplyMode: false,
-};
-</code></pre><p>如果用的不是微信小号，最好也设置一个唤醒词，避免打扰到别人。</p>
-<p>搜索并下载Docker映像suyunkai46/chatgpt-wechat</p>
-<p>新增容器，选择下载的镜像部署，需要把下载的config.ts文件挂载到容器内/code/src/config.ts路径上，其余设置均默认即可。</p>
-<p>进入容器终端机，依次输入三条指令：</p>
-<pre><code>npm install -g pm2
+        <h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。
 
-pm2 start npm -- run dev
-
-pm2 logs
-</code></pre><p>npm install -g pm2只有刚搭建完后需要输入一次，以后再也不用输入了</p>
-<pre><code>每次重新启动容器，都需要控制台手动输入一次pm2 start npm -- run dev，才能启动程序
-
-  随时可以输入pm2 logs查看日志记录获取微信二维码
+邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利
+点此链接报名参加
 </code></pre><blockquote>
-<p>##通过微信扫码即可登陆，然后给登陆的微信号发消息，就可以愉快的调戏ChatGPT了。<br>![扫描二维码]<img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1677318905978.png"></p>
+<p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195</a></p>
 </blockquote>
-<pre><code>错位了刷新多几次就好了。
-</code></pre><h1 id="预防被封号建议用小号进行测试-1"><a href="#预防被封号建议用小号进行测试-1" class="headerlink" title="预防被封号建议用小号进行测试"></a>预防被封号建议用小号进行测试</h1><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote>
-<p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a></p>
+<hr>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png"></p>
+</blockquote>
+<hr>
+<pre><code>唐诗、宋词、元曲都是中国文学史上极具影响力的文学形式。  唐诗，泛指创作于唐朝的诗，也可以引申指以唐朝风格创作的诗。唐诗是中华民族最珍贵的文化遗产之一，是中华文化宝库中的一颗明珠，对世界上许多民族和国家的文化发展都产生了很大影响。
+唐诗的形式是多种多样的，不仅有五言七言的古诗，还有绝句和律诗，在字数、声韵和平仄上都有严格的限制。
+
+宋词是一种相对于古体诗的新体诗歌，为宋代儒客文人智慧精华，标志宋代文学的最高成就。宋词句子有长有短，便于歌唱。因是合乐的歌词，故又称曲子词、乐府、乐章、长短句、诗余、琴趣等。
+
+元曲，是盛行于元代的一种文艺形式，为元代儒客文人智慧精髓，包括杂剧和散曲，有时专指杂剧。
+杂剧，宋代以滑稽搞笑为特点的一种表演形式，元代发展成戏曲形式。每本以四折为主，在开头或折间另加楔子，每折用同宫调同韵的北曲套曲和宾白组成。
+如关汉卿的《窦娥冤》等。流行于大都（今北京）一带。明清两代也有杂剧，但每本不限四折。散曲，盛行于元、明、清三代的没有宾白的曲子形式。内容以抒情为主，有小令和散套两种。
+</code></pre><hr>
+<h3 id="一、经典诗词合集"><a href="#一、经典诗词合集" class="headerlink" title="一、经典诗词合集"></a>一、经典诗词合集</h3><blockquote>
+<p>1、诗词词典合集-全宋词典故、中国古代诗歌辞典等赏析<br><a href="https://www.alipan.com/s/57wN26g2VfT" target="_blank" rel="noopener">https://www.alipan.com/s/57wN26g2VfT</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>2、唐诗三百首 儿童唱游动画版<br><a href="https://www.alipan.com/s/HLc1tTgB7Vg" target="_blank" rel="noopener">https://www.alipan.com/s/HLc1tTgB7Vg</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>3、唐诗三百首 小视频版314集齐<br><a href="https://www.alipan.com/s/5QviR539Mv7" target="_blank" rel="noopener">https://www.alipan.com/s/5QviR539Mv7</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>4、唐诗宋词鉴赏大典<br><a href="https://www.alipan.com/s/YohpT3ryVmZ" target="_blank" rel="noopener">https://www.alipan.com/s/YohpT3ryVmZ</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>5、唐诗宋词元曲 学生动画学习版<br><a href="https://www.alipan.com/s/QRFvENdPL19" target="_blank" rel="noopener">https://www.alipan.com/s/QRFvENdPL19</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>6、中国古代诗词分类大典（全8册）<br><a href="https://www.alipan.com/s/nrjdeKAjdxG" target="_blank" rel="noopener">https://www.alipan.com/s/nrjdeKAjdxG</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>7、宋词<br><a href="https://www.alipan.com/s/RF8XASts6Gf" target="_blank" rel="noopener">https://www.alipan.com/s/RF8XASts6Gf</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>8、元曲<br><a href="https://www.alipan.com/s/v22ebTPLTQR" target="_blank" rel="noopener">https://www.alipan.com/s/v22ebTPLTQR</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。<br>9、《全唐诗》<br><a href="https://www.alipan.com/s/xaawYg2XCnf" target="_blank" rel="noopener">https://www.alipan.com/s/xaawYg2XCnf</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p>
+</blockquote>
+<h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote>
+<p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p>
 </blockquote>
 
       
