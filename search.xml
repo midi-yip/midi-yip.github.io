@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>升级NASTool3.0.2如何降级-nastools降级</title>
+      <link href="/2023/12/29/nastools20231229/"/>
+      <url>/2023/12/29/nastools20231229/</url>
+      
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><h4 id="nastools降级"><a href="#nastools降级" class="headerlink" title="nastools降级"></a>nastools降级</h4><pre><code>1、看到套件有更新，就想体验下，谁知门槛不够，只能退回。如下图所示，看起来挻简洁的</code></pre><p>![nastools3.0.2]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/1703836762330.jpg" width="700" height="250" alt align="center"></p><pre><code>2、右下角登陆后就回到熟悉的界面了</code></pre><p>![PT站点认证]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/nastools3.02.jpg" width="700" height="250" alt align="center"></p><pre><code>3、因为我没有PT账号，所以只能退回2.9了。注意备份当前配置（以防万一）。</code></pre><p>![备份数据]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/nastools3.03.jpg" width="700" height="250" alt align="center"></p><pre><code>4、选择仅卸载。（当时试了几次没成功，直接全部删除重装。没提前备份数据，只能重新配置）</code></pre><p>![卸载]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/1703837004950.png" width="700" height="250" alt align="center"></p><pre><code>5、进入套件中心-手动安装。</code></pre><p>![手动安装2.9.1]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/1703838537988.png" width="700" height="250" alt align="center"></p><pre><code>DSM7 x64 2.9.1的离线安装包 链接：https://share.weiyun.com/ATDa4Exz 密码：dmgwqm</code></pre><p>![熟悉的界面]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/20231229/1703839551753.png" width="700" height="250" alt align="center"></p><blockquote><p>到这安装也就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> NAS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> 54屋 </tag>
+            
+            <tag> 群晖nastools </tag>
+            
+            <tag> 降级 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>群晖IPTV管理系统搭建教程-用群晖看电视</title>
       <link href="/2023/12/28/IPTV20231228/"/>
       <url>/2023/12/28/IPTV20231228/</url>
@@ -13,7 +44,7 @@
       
       <categories>
           
-          <category> 分享 </category>
+          <category> NAS </category>
           
       </categories>
       
