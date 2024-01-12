@@ -8,7 +8,7 @@
       <link href="/2024/01/04/nasdkou20240105/"/>
       <url>/2024/01/04/nasdkou20240105/</url>
       
-        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><h4 id="群晖修改默认端口为80、443"><a href="#群晖修改默认端口为80、443" class="headerlink" title="群晖修改默认端口为80、443"></a>群晖修改默认端口为80、443</h4><ul><li>群晖修改默认端口为80、443<br>解除80、443端口的占用，方便搭建小站访问用-网上抄来的</li></ul><p>#使用putty登录群晖</p><pre><code>ssh登陆nassudo -i #切换至root用户</code></pre><p>#检查端口占用情况<br>     netstat -anp |grep 80</p><pre><code>netstat -anp |grep 443</code></pre><p>#能确定端口被nginx占用<br>     cd /usr/syno/share/nginx</p><p>#文件备份<br>     cp server.mustache server.mustache_<code>date +%Y%m%d</code></p><pre><code>cp DSM.mustache DSM.mustache_`date +%Y%m%d`cp WWWService.mustache WWWService.mustache_`date +%Y%m%d`</code></pre><p>#其中的8080、8443自行调整<br>     sed -i “s/80/8080/g” server.mustache</p><pre><code>sed -i &quot;s/80/8080/g&quot; DSM.mustachesed -i &quot;s/80/8080/g&quot; WWWService.mustachesed -i &quot;s/443/8443/g&quot; server.mustachesed -i &quot;s/443/8443/g&quot; DSM.mustachesed -i &quot;s/443/8443/g&quot; WWWService.mustache</code></pre><p>#重启nginx<br>     synosystemctl restart nginx</p><p>#检查nginx服务<br>     ps -ef|grep nginx</p><p>#检查端口占用情况<br>     netstat -anp |grep 80</p><pre><code>netstat -anp |grep 443</code></pre><blockquote><p>到端口修改就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><h4 id="群晖修改默认端口为80、443"><a href="#群晖修改默认端口为80、443" class="headerlink" title="群晖修改默认端口为80、443"></a>群晖修改默认端口为80、443</h4><ul><li>群晖修改默认端口为80、443<br>解除80、443端口的占用，方便搭建小站访问用-网上抄来的</li></ul><p>#使用putty登录群晖</p><pre><code>ssh登陆nassudo -i #切换至root用户</code></pre><p>#检查端口占用情况</p><pre><code>netstat -anp |grep 80netstat -anp |grep 443</code></pre><p>#能确定端口被nginx占用</p><pre><code>cd /usr/syno/share/nginx</code></pre><p>#文件备份</p><pre><code>cp server.mustache server.mustache_`date +%Y%m%d`cp DSM.mustache DSM.mustache_`date +%Y%m%d`cp WWWService.mustache WWWService.mustache_`date +%Y%m%d`</code></pre><p>#其中的8080、8443自行调整</p><pre><code>sed -i &quot;s/80/8080/g&quot; server.mustachesed -i &quot;s/80/8080/g&quot; DSM.mustachesed -i &quot;s/80/8080/g&quot; WWWService.mustachesed -i &quot;s/443/8443/g&quot; server.mustachesed -i &quot;s/443/8443/g&quot; DSM.mustachesed -i &quot;s/443/8443/g&quot; WWWService.mustache</code></pre><p>#重启nginx</p><pre><code>synosystemctl restart nginx</code></pre><p>#检查nginx服务</p><pre><code>ps -ef|grep nginx</code></pre><p>#检查端口占用情况</p><pre><code>netstat -anp |grep 80netstat -anp |grep 443</code></pre><blockquote><p>到这端口修改就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
       
       
       <categories>
@@ -26,13 +26,13 @@
             
             <tag> 群晖 </tag>
             
+            <tag> 端口 </tag>
+            
             <tag> 外网访问 </tag>
             
             <tag> 花生壳 </tag>
             
             <tag> 内网穿透 </tag>
-            
-            <tag> 端口 </tag>
             
         </tags>
       
@@ -63,13 +63,13 @@
             
             <tag> 群晖 </tag>
             
-            <tag> oray </tag>
-            
             <tag> 外网访问 </tag>
             
             <tag> 花生壳 </tag>
             
             <tag> 内网穿透 </tag>
+            
+            <tag> oray </tag>
             
         </tags>
       
@@ -391,7 +391,7 @@
       <link href="/2023/12/12/aliyunpan20231212read1/"/>
       <url>/2023/12/12/aliyunpan20231212read1/</url>
       
-        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><blockquote><p><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" align="center"></p></blockquote><hr><pre><code>百科全书是一种全面系统地介绍各种学科知识的工具书，涵盖了人类知识的各个方面，包括自然科学、社会科学、人文科学等。百科全书通常以条目的形式，对各种知识进行分类和介绍，每个条目都包含了相关的定义、解释、历史、发展等方面的内容。在当今社会，随着互联网技术的发展，百科全书的形式也在不断变化和创新。除了传统的纸质版百科全书外，还有电子版、在线版等多种形式的百科全书可供选择。这些形式的百科全书更加方便快捷，可以随时随地查阅各种知识。</code></pre><hr><h3 id="一、中国百科全书"><a href="#一、中国百科全书" class="headerlink" title="一、中国百科全书"></a>一、中国百科全书</h3><blockquote><p>1、家庭藏书集锦<em>红旗出版社</em>百科全书<br><a href="https://www.alipan.com/s/ZHHfnpizdvu" target="_blank" rel="noopener">https://www.alipan.com/s/ZHHfnpizdvu</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>2、家庭藏书集锦<em>红旗出版社</em>家庭生活与艺术<br><a href="https://www.alipan.com/s/XipCu4wum9T" target="_blank" rel="noopener">https://www.alipan.com/s/XipCu4wum9T</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>3、中国家氏族谱总目录<br><a href="https://www.alipan.com/s/AZAZ9bMjmXM" target="_blank" rel="noopener">https://www.alipan.com/s/AZAZ9bMjmXM</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>4、中华传统文化典籍<br>成语故事合集（mp4）<br><a href="https://www.alipan.com/s/ZMiNbrrSa4S" target="_blank" rel="noopener">https://www.alipan.com/s/ZMiNbrrSa4S</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><p>5、弟子规-动漫视频1080P<br><a href="https://www.alipan.com/s/9HwkNUUgeE1" target="_blank" rel="noopener">https://www.alipan.com/s/9HwkNUUgeE1</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>6、二十四节气系列创意动画<br><a href="https://www.alipan.com/s/KeLDevX35qn" target="_blank" rel="noopener">https://www.alipan.com/s/KeLDevX35qn</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>7、方言、姓氏、赠言、故事等<br><a href="https://www.alipan.com/s/foz4YtkKffR" target="_blank" rel="noopener">https://www.alipan.com/s/foz4YtkKffR</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>8、古汉字与华夏文明<br><a href="https://www.alipan.com/s/H5zXxRMFvtu" target="_blank" rel="noopener">https://www.alipan.com/s/H5zXxRMFvtu</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>9、大中华文化知识宝库<br><a href="https://www.alipan.com/s/4ERqwJ4MiZJ" target="_blank" rel="noopener">https://www.alipan.com/s/4ERqwJ4MiZJ</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>10、家常菜 相关书籍<br><a href="https://www.alipan.com/s/esRf2bS6BtY" target="_blank" rel="noopener">https://www.alipan.com/s/esRf2bS6BtY</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>11、野外求生手册<br><a href="https://www.alipan.com/s/XaMp5rEkojp" target="_blank" rel="noopener">https://www.alipan.com/s/XaMp5rEkojp</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>12、中国古代八大兵书<br><a href="https://www.alipan.com/s/YJ5kHw7mxDk" target="_blank" rel="noopener">https://www.alipan.com/s/YJ5kHw7mxDk</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>13、中国军事百科全书<br><a href="https://www.alipan.com/s/YZBF5kffyvH" target="_blank" rel="noopener">https://www.alipan.com/s/YZBF5kffyvH</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><blockquote><p><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" align="center"></p></blockquote><hr><pre><code>百科全书是一种全面系统地介绍各种学科知识的工具书，涵盖了人类知识的各个方面，包括自然科学、社会科学、人文科学等。百科全书通常以条目的形式，对各种知识进行分类和介绍，每个条目都包含了相关的定义、解释、历史、发展等方面的内容。在当今社会，随着互联网技术的发展，百科全书的形式也在不断变化和创新。除了传统的纸质版百科全书外，还有电子版、在线版等多种形式的百科全书可供选择。这些形式的百科全书更加方便快捷，可以随时随地查阅各种知识。</code></pre><hr><h3 id="一、中国百科全书"><a href="#一、中国百科全书" class="headerlink" title="一、中国百科全书"></a>一、中国百科全书</h3><blockquote><p>1、家庭藏书集锦<em>红旗出版社</em>百科全书<br><a href="https://www.alipan.com/s/ZHHfnpizdvu" target="_blank" rel="noopener">https://www.alipan.com/s/ZHHfnpizdvu</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>2、家庭藏书集锦<em>红旗出版社</em>家庭生活与艺术<br><a href="https://www.alipan.com/s/XipCu4wum9T" target="_blank" rel="noopener">https://www.alipan.com/s/XipCu4wum9T</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>3、中国家氏族谱总目录<br><a href="https://www.alipan.com/s/AZAZ9bMjmXM" target="_blank" rel="noopener">https://www.alipan.com/s/AZAZ9bMjmXM</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><blockquote><p>4、中华传统文化典籍<br>成语故事合集（mp4）<br><a href="https://www.alipan.com/s/ZMiNbrrSa4S" target="_blank" rel="noopener">https://www.alipan.com/s/ZMiNbrrSa4S</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p></blockquote><p>5、弟子规-动漫视频1080P<br><a href="https://www.alipan.com/s/9HwkNUUgeE1" target="_blank" rel="noopener">https://www.alipan.com/s/9HwkNUUgeE1</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>6、二十四节气系列创意动画<br><a href="https://www.alipan.com/s/KeLDevX35qn" target="_blank" rel="noopener">https://www.alipan.com/s/KeLDevX35qn</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>7、方言、姓氏、赠言、故事等<br><a href="https://www.alipan.com/s/foz4YtkKffR" target="_blank" rel="noopener">https://www.alipan.com/s/foz4YtkKffR</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>8、古汉字与华夏文明<br><a href="https://www.alipan.com/s/H5zXxRMFvtu" target="_blank" rel="noopener">https://www.alipan.com/s/H5zXxRMFvtu</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>9、大中华文化知识宝库<br><a href="https://www.alipan.com/s/4ERqwJ4MiZJ" target="_blank" rel="noopener">https://www.alipan.com/s/4ERqwJ4MiZJ</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>10、家常菜 相关书籍<br><a href="https://www.alipan.com/s/esRf2bS6BtY" target="_blank" rel="noopener">https://www.alipan.com/s/esRf2bS6BtY</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>11、野外求生手册<br><a href="https://www.alipan.com/s/XaMp5rEkojp" target="_blank" rel="noopener">https://www.alipan.com/s/XaMp5rEkojp</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>12、中国古代八大兵书<br><a href="https://www.alipan.com/s/YJ5kHw7mxDk" target="_blank" rel="noopener">https://www.alipan.com/s/YJ5kHw7mxDk</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>13、中国军事百科全书<br><a href="https://www.alipan.com/s/YZBF5kffyvH" target="_blank" rel="noopener">https://www.alipan.com/s/YZBF5kffyvH</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><p>14、全宋词佳句类典<br><a href="https://www.alipan.com/s/LD4h5xey2mN" target="_blank" rel="noopener">https://www.alipan.com/s/LD4h5xey2mN</a><br>点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。</p><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
       
       
       <categories>
@@ -730,35 +730,6 @@
     
     
     <entry>
-      <title>火树银花</title>
-      <link href="/2023/02/17/%E7%81%AB%E6%A0%91%E9%93%B6%E8%8A%B1/"/>
-      <url>/2023/02/17/%E7%81%AB%E6%A0%91%E9%93%B6%E8%8A%B1/</url>
-      
-        <content type="html"><![CDATA[<p>![火树银花] <img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1676628099180.png"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 分享 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 烟花 </tag>
-            
-            <tag> 元宵 </tag>
-            
-            <tag> 火树银花 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JD京豆自助流程</title>
       <link href="/2023/02/17/new20230216/"/>
       <url>/2023/02/17/new20230216/</url>
@@ -784,6 +755,35 @@
             <tag> 自助签到 </tag>
             
             <tag> wsck </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>火树银花</title>
+      <link href="/2023/02/17/%E7%81%AB%E6%A0%91%E9%93%B6%E8%8A%B1/"/>
+      <url>/2023/02/17/%E7%81%AB%E6%A0%91%E9%93%B6%E8%8A%B1/</url>
+      
+        <content type="html"><![CDATA[<p>![火树银花] <img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1676628099180.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 烟花 </tag>
+            
+            <tag> 元宵 </tag>
+            
+            <tag> 火树银花 </tag>
             
         </tags>
       
