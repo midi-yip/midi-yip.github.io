@@ -4,13 +4,33 @@
   
     
     <entry>
-      <title></title>
+      <title>酷狗音乐自助签到</title>
       <link href="/2024/02/22/kgyy20240222/"/>
       <url>/2024/02/22/kgyy20240222/</url>
       
-        <content type="html"><![CDATA[<hr><p>title: 酷狗音乐自助签到<br>tags: </p><ul><li>酷狗音乐</li><li>酷狗音乐脚本</li><li>kugou</li><li>自助签到</li><li>kgyy<br>category: </li><li>分享<br>emoji: “😜”<br>grammar_cjkRuby: true</li></ul><hr><pre><code>网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><p>自己搭建的青龙面板。<a href="http://mirouter.iok.la" target="_blank" rel="noopener"> http://mirouter.iok.la/ </a>操作也比较简单，网上教程也都齐全，只要把你获得的COOKIE按要求填入提交就算完成。<br>站上添加京东、阿里、bilibi、酷狗音乐等脚本，欢迎测试</p><h4 id="1、通过小黄鸟或是VNET获取酷狗音乐的变量"><a href="#1、通过小黄鸟或是VNET获取酷狗音乐的变量" class="headerlink" title="1、通过小黄鸟或是VNET获取酷狗音乐的变量"></a>1、通过小黄鸟或是VNET获取酷狗音乐的变量</h4><blockquote><p>酷狗音乐，抓取后直接把带有token，uuid，mid，userid，dfid录等关键词信息整段URL放到变量就可以，如添加提现变量openid=连接用&amp;。<br>（苹果抓取提交后显示未登录）</p></blockquote><h5 id="抓取变量"><a href="#抓取变量" class="headerlink" title="抓取变量"></a>抓取变量</h5><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024222/1708560439181.png" width="700" height="250" alt align="center"></p></blockquote><h5 id="筛选需要的变量，有的是在gateway-kugou-com这连接里"><a href="#筛选需要的变量，有的是在gateway-kugou-com这连接里" class="headerlink" title="筛选需要的变量，有的是在gateway.kugou.com这连接里"></a>筛选需要的变量，有的是在gateway.kugou.com这连接里</h5><pre><code>http://welfare.kugou.com/pendant/v2/get_user_pendant?dfid=0Qd88W4BI9Va2b7GDH4cWOwO&amp;signature=631e6e89f46a1d941d6915c15cd12ae6&amp;appid=1805&amp;mid=318878486889585601129300744548745207406&amp;super_type=1&amp;clientver=18169&amp;vip_level_version=1&amp;clienttime=1708385306&amp;uuid=-&amp;userid=1871883834&amp;token=22bR1uU35Z9Kz1</code></pre><h5 id="或是自己从不同的连接里提取拼接："><a href="#或是自己从不同的连接里提取拼接：" class="headerlink" title="或是自己从不同的连接里提取拼接："></a>或是自己从不同的连接里提取拼接：</h5><pre><code>token=**&amp;uuid=**&amp;mid=**&amp;userid=**&amp;dfid=**    </code></pre><h5 id="到站点进行提交"><a href="#到站点进行提交" class="headerlink" title="到站点进行提交"></a>到站点进行提交</h5><pre><code>http://mirouter.iok.la</code></pre><h5 id="选择对应项目，提交COOKIE"><a href="#选择对应项目，提交COOKIE" class="headerlink" title="选择对应项目，提交COOKIE"></a>选择对应项目，提交COOKIE</h5><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202426/1707189665354.png" width="700" height="250" alt align="center"></p></blockquote><h4 id="2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。"><a href="#2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。" class="headerlink" title="2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。"></a>2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。</h4><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024222/1708561161995.jpg" width="700" height="250" alt align="center"></p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code>网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><p>自己搭建的青龙面板。<a href="http://mirouter.iok.la" target="_blank" rel="noopener"> http://mirouter.iok.la/ </a>操作也比较简单，网上教程也都齐全，只要把你获得的COOKIE按要求填入提交就算完成。<br>站上添加京东、阿里、bilibi、酷狗音乐等脚本，欢迎测试</p><h4 id="1、通过小黄鸟或是VNET获取酷狗音乐的变量"><a href="#1、通过小黄鸟或是VNET获取酷狗音乐的变量" class="headerlink" title="1、通过小黄鸟或是VNET获取酷狗音乐的变量"></a>1、通过小黄鸟或是VNET获取酷狗音乐的变量</h4><blockquote><p>酷狗音乐，抓取后直接把带有token，uuid，mid，userid，dfid录等关键词信息整段URL放到变量就可以，如添加提现变量openid=连接用&amp;。<br>（苹果抓取提交后显示未登录）</p></blockquote><h5 id="抓取变量"><a href="#抓取变量" class="headerlink" title="抓取变量"></a>抓取变量</h5><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024222/1708560439181.png" width="700" height="250" alt align="center"></p></blockquote><h5 id="筛选需要的变量，有的是在gateway-kugou-com这连接里"><a href="#筛选需要的变量，有的是在gateway-kugou-com这连接里" class="headerlink" title="筛选需要的变量，有的是在gateway.kugou.com这连接里"></a>筛选需要的变量，有的是在gateway.kugou.com这连接里</h5><pre><code>http://welfare.kugou.com/pendant/v2/get_user_pendant?dfid=0Qd88W4BI9Va2b7GDH4cWOwO&amp;signature=631e6e89f46a1d941d6915c15cd12ae6&amp;appid=1805&amp;mid=318878486889585601129300744548745207406&amp;super_type=1&amp;clientver=18169&amp;vip_level_version=1&amp;clienttime=1708385306&amp;uuid=-&amp;userid=1871883834&amp;token=22bR1uU35Z9Kz1</code></pre><h5 id="或是自己从不同的连接里提取拼接："><a href="#或是自己从不同的连接里提取拼接：" class="headerlink" title="或是自己从不同的连接里提取拼接："></a>或是自己从不同的连接里提取拼接：</h5><pre><code>token=**&amp;uuid=**&amp;mid=**&amp;userid=**&amp;dfid=**    </code></pre><h5 id="到站点进行提交"><a href="#到站点进行提交" class="headerlink" title="到站点进行提交"></a>到站点进行提交</h5><pre><code>http://mirouter.iok.la</code></pre><h5 id="选择对应项目，提交COOKIE"><a href="#选择对应项目，提交COOKIE" class="headerlink" title="选择对应项目，提交COOKIE"></a>选择对应项目，提交COOKIE</h5><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202426/1707189665354.png" width="700" height="250" alt align="center"></p></blockquote><h4 id="2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。"><a href="#2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。" class="headerlink" title="2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。"></a>2、运行效果图，大概15分钟运行一次，这脚本没通知，只能自己到酷狗任务中心查看金币的变化。</h4><blockquote><p><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024222/1708561161995.jpg" width="700" height="250" alt align="center"></p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
       
       
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 酷狗音乐 </tag>
+            
+            <tag> 酷狗音乐脚本 </tag>
+            
+            <tag> kugou </tag>
+            
+            <tag> 自助签到 </tag>
+            
+            <tag> kgyy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -35,9 +55,9 @@
             
             <tag> 群晖 </tag>
             
-            <tag> chat </tag>
-            
             <tag> 通知推送 </tag>
+            
+            <tag> chat </tag>
             
             <tag> nastool </tag>
             
@@ -68,9 +88,9 @@
             
             <tag> 群晖 </tag>
             
-            <tag> 通知推送 </tag>
-            
             <tag> gotify </tag>
+            
+            <tag> 通知推送 </tag>
             
             <tag> 青龙面板 </tag>
             
@@ -860,13 +880,13 @@
       
         <tags>
             
+            <tag> 自助签到 </tag>
+            
             <tag> JD </tag>
             
             <tag> 京东 </tag>
             
             <tag> 京豆 </tag>
-            
-            <tag> 自助签到 </tag>
             
             <tag> wsck </tag>
             
