@@ -55,13 +55,13 @@
       
         <tags>
             
+            <tag> IPTV源 </tag>
+            
             <tag> 电视直播源 </tag>
             
             <tag> IPTV </tag>
             
             <tag> CCTV </tag>
-            
-            <tag> IPTV源 </tag>
             
             <tag> 央视 </tag>
             
@@ -173,7 +173,7 @@
       <link href="/2024/02/03/nasgotify20240203/"/>
       <url>/2024/02/03/nasgotify20240203/</url>
       
-        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><h1 id="1、搭建gotify部份"><a href="#1、搭建gotify部份" class="headerlink" title="1、搭建gotify部份"></a>1、搭建gotify部份</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>在docker目录下新建文件夹，名为gotify</li></ul><p>![新建文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955168770.png" width="700" height="250" alt align="center"></p><p>![设置权限]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955265273.png" width="700" height="250" alt align="center"></p><h2 id="群晖docker下载gotify映像"><a href="#群晖docker下载gotify映像" class="headerlink" title="群晖docker下载gotify映像"></a>群晖docker下载gotify映像</h2><ul><li>现群晖被墙，注册表打不开的请用梯子，我这边已经下载好了，就不重复了。</li></ul><h2 id="选中映像后启动，进行到安装界面"><a href="#选中映像后启动，进行到安装界面" class="headerlink" title="选中映像后启动，进行到安装界面"></a>选中映像后启动，进行到安装界面</h2><p>![默认下载latest]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955656056.png" width="700" height="250" alt align="center"></p><h2 id="名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入-data"><a href="#名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入-data" class="headerlink" title="名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入/data"></a>名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入/data</h2><p>![启动选择高级设置]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955862991.png" width="700" height="250" alt align="center"></p><p>![设置文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956013729.png" width="700" height="250" alt align="center"></p><h2 id="网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin-admin"><a href="#网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin-admin" class="headerlink" title="网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin/admin"></a>网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin/admin</h2><p>![设置文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956143712.png" width="700" height="250" alt align="center"></p><p>![登录管理后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956353382.png" width="700" height="250" alt align="center"></p><h1 id="2、对接青龙面板部份"><a href="#2、对接青龙面板部份" class="headerlink" title="2、对接青龙面板部份"></a>2、对接青龙面板部份</h1><h2 id="添应用获取token"><a href="#添应用获取token" class="headerlink" title="添应用获取token"></a>添应用获取token</h2><p>![获取token]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956452444.png" width="700" height="250" alt align="center"></p><p>![登录青龙面板后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706960231411.png" width="700" height="250" alt align="center"></p><p>![保存后会发送测试通知到gotify后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706960411258.png" width="700" height="250" alt align="center"></p><ul><li><p>该应用暂只提供了网页版及安卓版APP，请自行选配。</p></li><li><p>如有需要的可以试用<a href="http://c357r48045.zicp.vip" target="_blank" rel="noopener">http://c357r48045.zicp.vip</a><br>账户密码t20240202/123456</p></li></ul><blockquote><p>到这按部就搬的作业就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code> 网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加</a></p></blockquote><h2 id><a href="#" class="headerlink" title></a><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="250" height="300" alt align="center"></h2><h1 id="1、搭建gotify部份"><a href="#1、搭建gotify部份" class="headerlink" title="1、搭建gotify部份"></a>1、搭建gotify部份</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>在docker目录下新建文件夹，名为gotify</li></ul><p>![新建文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955168770.png" width="700" height="250" alt align="center"></p><p>![设置权限]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955265273.png" width="700" height="250" alt align="center"></p><h2 id="群晖docker下载gotify映像"><a href="#群晖docker下载gotify映像" class="headerlink" title="群晖docker下载gotify映像"></a>群晖docker下载gotify映像</h2><ul><li>现群晖被墙，注册表打不开的请用梯子，我这边已经下载好了，就不重复了。</li></ul><h2 id="选中映像后启动，进行到安装界面"><a href="#选中映像后启动，进行到安装界面" class="headerlink" title="选中映像后启动，进行到安装界面"></a>选中映像后启动，进行到安装界面</h2><p>![默认下载latest]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955656056.png" width="700" height="250" alt align="center"></p><h2 id="名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入-data"><a href="#名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入-data" class="headerlink" title="名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入/data"></a>名字默认即可，如图点击高级设置，存储空间，添加之前新建的gotify文件夹，装载路径填入/data</h2><p>![启动选择高级设置]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706955862991.png" width="700" height="250" alt align="center"></p><p>![设置文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956013729.png" width="700" height="250" alt align="center"></p><h2 id="网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin-admin"><a href="#网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin-admin" class="headerlink" title="网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin/admin"></a>网络端口自己选择，不与现行程序冲突就好。至此gotify已安装完成，可通过IP：prot直接访问，账户密码默认admin/admin</h2><p>![设置文件夹]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956143712.png" width="700" height="250" alt align="center"></p><p>![登录管理后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956353382.png" width="700" height="250" alt align="center"></p><h1 id="2、对接青龙面板部份"><a href="#2、对接青龙面板部份" class="headerlink" title="2、对接青龙面板部份"></a>2、对接青龙面板部份</h1><h2 id="添应用获取token"><a href="#添应用获取token" class="headerlink" title="添应用获取token"></a>添应用获取token</h2><p>![获取token]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706956452444.png" width="700" height="250" alt align="center"></p><p>![登录青龙面板后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706960231411.png" width="700" height="250" alt align="center"></p><p>![保存后会发送测试通知到gotify后台]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202423/1706960411258.png" width="700" height="250" alt align="center"></p><ul><li><p>该应用暂只提供了网页版及安卓版APP，请自行选配。</p></li><li><p>如有需要的可以试用<a href="https://1ec5058720.vicp.fun/" target="_blank" rel="noopener">https://1ec5058720.vicp.fun/</a><br>账户密码t20240202/123456</p></li></ul><blockquote><p>到这按部就搬的作业就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a></p></blockquote>]]></content>
       
       
       <categories>
@@ -218,11 +218,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 法外狂徒 </tag>
             
@@ -255,9 +255,9 @@
       
         <tags>
             
-            <tag> 54屋 </tag>
-            
             <tag> 搭建 </tag>
+            
+            <tag> 54屋 </tag>
             
             <tag> 群晖 </tag>
             
@@ -292,9 +292,9 @@
       
         <tags>
             
-            <tag> 54屋 </tag>
-            
             <tag> 搭建 </tag>
+            
+            <tag> 54屋 </tag>
             
             <tag> 群晖 </tag>
             
@@ -329,9 +329,9 @@
       
         <tags>
             
-            <tag> 54屋 </tag>
-            
             <tag> 搭建 </tag>
+            
+            <tag> 54屋 </tag>
             
             <tag> 群晖 </tag>
             
@@ -366,9 +366,9 @@
       
         <tags>
             
-            <tag> 54屋 </tag>
-            
             <tag> 搭建 </tag>
+            
+            <tag> 54屋 </tag>
             
             <tag> 群晖nastools </tag>
             
@@ -397,15 +397,15 @@
       
         <tags>
             
-            <tag> IPTV源 </tag>
-            
-            <tag> 54屋 </tag>
-            
             <tag> 群晖NAS </tag>
             
             <tag> 搭建 </tag>
             
             <tag> 群晖IPTV </tag>
+            
+            <tag> IPTV源 </tag>
+            
+            <tag> 54屋 </tag>
             
         </tags>
       
@@ -430,11 +430,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 电子书 </tag>
             
@@ -467,11 +467,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 电子书 </tag>
             
@@ -533,11 +533,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 电子书 </tag>
             
@@ -566,11 +566,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 电子书 </tag>
             
@@ -599,11 +599,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 电子书 </tag>
             
@@ -638,11 +638,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> 百科 </tag>
             
@@ -706,11 +706,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
         </tags>
       
@@ -768,11 +768,11 @@
       
         <tags>
             
+            <tag> 54屋 </tag>
+            
             <tag> aliyun </tag>
             
             <tag> 阿里云盘 </tag>
-            
-            <tag> 54屋 </tag>
             
             <tag> NBA </tag>
             
