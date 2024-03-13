@@ -6,18 +6,18 @@
   <meta name="keywords" content=" 群晖 , DSM7.X , 硬盘 , 黑群晖918 ">
   <meta name="description" content="黑群晖918+主机DSM7.X系统修改参数支持多硬盘教程 | 54屋-阿里云盘资源分享">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="日常搬运工">
+<meta name="description" content="Oops～，我崩溃了！找不到你想要的页面 :(">
 <meta name="keywords" content="免费梯子,SSR,京东自助签到,阿里云盘,免费下载,github博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:title" content="404">
+<meta property="og:url" content="http://yoursite.com/404/index.html">
 <meta property="og:site_name" content="54屋-阿里云盘资源分享">
-<meta property="og:description" content="日常搬运工">
+<meta property="og:description" content="Oops～，我崩溃了！找不到你想要的页面 :(">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2023-02-17T04:14:47.545Z">
+<meta property="og:updated_time" content="2023-02-19T01:54:52.258Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="日常搬运工">
+<meta name="twitter:title" content="404">
+<meta name="twitter:description" content="Oops～，我崩溃了！找不到你想要的页面 :(">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -1002,12 +1002,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title="最后更新: 2024-03-13 14:35:02">2024-03-13 11:07</time>
+            发布时间 : <time class="date" title="最后更新: 2024-03-13 14:44:04">2024-03-13 11:07</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:518</span>
+        <span>字数:523</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1067,20 +1067,23 @@
 <p>![启动SSH]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710299811488.png" width="700" height="250" alt align="center"></p>
 <h3 id="打开putty软件登录控制台提权并进入文件"><a href="#打开putty软件登录控制台提权并进入文件" class="headerlink" title="打开putty软件登录控制台提权并进入文件"></a>打开putty软件登录控制台提权并进入文件</h3><ul>
 <li>sudo i</li>
-<li>输入 vi /etc.defaults/synoinfo.conf<br>![putty]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300207443.png" width="700" height="250" alt align="center"></li>
+<li>输入 vi /etc.defaults/synoinfo.conf</li>
 </ul>
+<p>![putty]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300207443.png" width="700" height="250" alt align="center"></p>
 <h3 id="进入编辑"><a href="#进入编辑" class="headerlink" title="进入编辑"></a>进入编辑</h3><ul>
 <li>进入文件，按下键盘上的“i”键进行插入修改</li>
-<li><p>找到maxdisks，把数字改为你想要的<br>![插入修改]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300600643.png" width="700" height="250" alt align="center"></p>
-</li>
-<li><p>internalportcfg=”0xffff”,ffff等于二进制16个1也就意味着全部的16个硬盘都是内部硬盘.</p>
-</li>
+<li>找到maxdisks，把数字改为你想要的。如：32</li>
+</ul>
+<p>![插入修改]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300600643.png" width="700" height="250" alt align="center"></p>
+<ul>
+<li>internalportcfg=”0xffff”,ffff等于二进制16个1也就意味着全部的16个硬盘都是内部硬盘.</li>
 <li>internalportcfg参数，把0xffff改为“0xffffffff”修改后就成了32位了</li>
 <li>按下esc键，然后输入：“:wq”保存退出即可</li>
-<li><p>也可以试着在写引导时在user-config.yml里面修改<br>![修改参数]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300626210.png" width="700" height="250" alt align="center"></p>
-</li>
-<li><p>如果没有找到那就自己试试添加；</p>
-</li>
+<li>也可以试着在写引导时在user-config.yml里面修改</li>
+</ul>
+<p>![修改参数]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300626210.png" width="700" height="250" alt align="center"></p>
+<ul>
+<li>如果没有找到这几项那就自己添加试试；</li>
 <li>esataportcfg=”0xfc000”</li>
 <li>internalportcfg=”0xffff”（备注：十六进制）</li>
 <li>maxdisks=”16”（备注：盘位数）</li>
@@ -1089,11 +1092,11 @@
 <li><p>重启下你的NAS看看盘符位是不是跟你修改的数目对应了。</p>
 </li>
 </ul>
-<blockquote>
-<p>到这按部就搬的作业就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p>
-</blockquote>
+<ul>
+<li>到这按部就搬的作业就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </li>
+</ul>
 <h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote>
-<p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a><br><a href="https://my.racknerd.com/aff.php?aff=11095" target="_blank" rel="noopener">国外优质主机推荐-一年只需10美元</a></p>
+<p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a><br><a href="https://www.44444o.com/2024/03/11/vps20240311/" target="_blank" rel="noopener">国外优质主机推荐-一年只需10美元</a></p>
 </blockquote>
 
       
