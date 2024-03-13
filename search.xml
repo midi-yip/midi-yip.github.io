@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>黑群晖918+主机DSM7.X系统修改参数支持多硬盘教程</title>
+      <link href="/2024/03/13/nasduopan20240313/"/>
+      <url>/2024/03/13/nasduopan20240313/</url>
+      
+        <content type="html"><![CDATA[<h2 id="欢迎使用-54屋-44444o-博客"><a href="#欢迎使用-54屋-44444o-博客" class="headerlink" title="欢迎使用 {54屋}(44444o)博客"></a>欢迎使用 <strong>{54屋}(44444o)博客</strong></h2><pre><code>网上搜集的一些小资源。邀请你加入阿里云盘达人招募计划，参与享最高50TB容量、延期卡等福利</code></pre><blockquote><p><a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=70e8195" target="_blank" rel="noopener">点此链接报名参加阿里云盘</a><br><a href="https://qm.qq.com/q/cEZslZeer0" target="_blank" rel="noopener">点击链接加入群聊【iptv源每天更新】</a><br><a href="https://qm.qq.com/q/gHVHNa3XY4" target="_blank" rel="noopener">点击链接加入群聊【自助羊毛圈】</a><br> <figure class="third"><br><img src="https://raw.githubusercontent.com/midiyc/img.github.io/main/share/1678694715034.png" width="200"><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202436/iptvqun图片.png" width="200"><img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/202436/zzymq.png" width="200"></figure></p></blockquote><h2 id><a href="#" class="headerlink" title></a></h2><h1 id="群晖盘符支持问题"><a href="#群晖盘符支持问题" class="headerlink" title="群晖盘符支持问题"></a>群晖盘符支持问题</h1><ul><li>群晖DS918+这个型号是4盘位,通过接扩展箱可以再接5个硬盘,从而达到9个盘位。因此就有人说了,黑群晖DS918+只支持4个硬盘,也有人说只支持9个硬盘。<br>确实只支持9盘吗？<br>其实我们可以通过修改系统文件参数来改变它支持盘符的数量</li></ul><h3 id="设置方法："><a href="#设置方法：" class="headerlink" title="设置方法："></a>设置方法：</h3><ul><li>打开控制面板-终端机-启动SSH</li></ul><p>![启动SSH]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710299811488.png" width="700" height="250" alt align="center"></p><h3 id="打开putty软件登录控制台提权并进入文件"><a href="#打开putty软件登录控制台提权并进入文件" class="headerlink" title="打开putty软件登录控制台提权并进入文件"></a>打开putty软件登录控制台提权并进入文件</h3><ul><li>sudo i</li><li>输入 vi /etc.defaults/synoinfo.conf<br>![putty]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300207443.png" width="700" height="250" alt align="center"></li></ul><h3 id="进入编辑"><a href="#进入编辑" class="headerlink" title="进入编辑"></a>进入编辑</h3><ul><li>进入文件，按下键盘上的“i”键进行插入修改</li><li><p>找到maxdisks，把数字改为你想要的<br>![插入修改]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300600643.png" width="700" height="250" alt align="center"></p></li><li><p>internalportcfg=”0xffff”,ffff等于二进制16个1也就意味着全部的16个硬盘都是内部硬盘.</p></li><li>internalportcfg参数，把0xffff改为“0xffffffff”修改后就成了32位了</li><li>按下esc键，然后输入：“:wq”保存退出即可</li><li><p>也可以试着在写引导时在user-config.yml里面修改<br>![修改参数]<img src="https://raw.githubusercontent.com/miyip/blogimgs/main/54o/2024313/1710300626210.png" width="700" height="250" alt align="center"></p></li><li><p>如果没有找到那就自己试试添加；</p></li><li>esataportcfg=”0xfc000”</li><li>internalportcfg=”0xffff”（备注：十六进制）</li><li>maxdisks=”16”（备注：盘位数）</li><li><p>想更多盘就盘位转换一下，十六进制与盘位数值对应，添加时备注删除。</p></li><li><p>重启下你的NAS看看盘符位是不是跟你修改的数目对应了。</p></li></ul><blockquote><p>到这按部就搬的作业就完成了，其它功能自己再去折腾吧！欢迎<font color="red">评论共享</font> </p></blockquote><h4 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h4><blockquote><p><a href="https://jingyan.baidu.com/article/c74d6000c278e84e6b595d46.html" target="_blank" rel="noopener">群晖NAS如何同步阿里云盘资料</a><br><a href="https://jingyan.baidu.com/article/1709ad80559f520734c4f08a.html" target="_blank" rel="noopener">群晖DSM邮件通知设置的步骤</a><br><a href="https://www.44444o.com/2023/03/01/glados20230301/" target="_blank" rel="noopener">科学的梯子</a><br><a href="https://my.racknerd.com/aff.php?aff=11095" target="_blank" rel="noopener">国外优质主机推荐-一年只需10美元</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> NAS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 群晖 </tag>
+            
+            <tag> DSM7.X </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 黑群晖918 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>国外优质主机推荐-一年只需10美元</title>
       <link href="/2024/03/11/vps20240311/"/>
       <url>/2024/03/11/vps20240311/</url>
